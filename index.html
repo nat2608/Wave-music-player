@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords"
-        content="hoodie, sudadera, prenda de vestir, ropa casual, moda, hoodie para hombre, hoodie para mujer, hoodie oversize, hoodie con capucha, hoodie estampado, hoodie de algodón, hoodie deportivo, hoodie invierno, hoodie verano, comprar hoodie online, Nike, Adidas, Champion, streetwear, urban, vintage">
+        content="sonido de alta calidad, musica en todas partes,sonido natural y autentico,sonido de alta resolución, música sin pérdidas, formatos de audio sin compresión">
     <meta name="description"
-        content="Descubre nuestra amplia selección de hoodies para hombre y mujer. Fabricados con materiales de alta calidad, nuestros hoodies son suaves, cómodos y perfectos para cualquier ocasión. ¡Encuentra tu estilo y compra ahora!">
+        content="Sumérgete en un mundo de sonido puro con nuestro reproductor de música de alta resolución. Diseñado para los audiófilos más exigentes, este reproductor te ofrece una calidad de sonido sin igual y te permite disfrutar de tu música favorita como nunca antes.">
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Wave</title>
@@ -35,11 +35,11 @@
     <main>
         <div class="reproductor">
             <div class="contenedor">
-                <img src="assets/Art deco.jpg" alt="">
+                <img src="assets/Art deco.jpg" alt="" id="current-song-image">
                 <div class="reproductor_info">
                     <div>
-                        <h2>Art Deco</h2>
-                        <p>Lana del Rey</p>
+                        <h2 id="current-song-title">Art Deco</h2>
+                        <p id="current-song-artista">Lana del Rey</p>
                     </div>
                     <button> <img src="assets/Like.svg" alt=""></button>
                 </div>
@@ -50,11 +50,12 @@
                 </div>
                 <div class="reproductor_botones">
                     <button> <img src="assets/Vector.svg" alt=""></button>
-                    <button> <img src="assets/boton pause.svg" alt=""></button>
+                    <button> <img id="play" src="assets/boton pause.svg" alt=""></button>
                     <button> <img src="assets/Next.svg" alt=""></button>
                 </div>
             </div>
         </div>
+        <audio src="" id="audio" autoplay></audio>
 
         <section>
 
