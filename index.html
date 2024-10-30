@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <meta name="keywords" content="<meta name=" keywords"
-        content="hoodie, sudadera, prenda de vestir, ropa casual, moda, hoodie para hombre, hoodie para mujer, hoodie oversize, hoodie con capucha, hoodie estampado, hoodie de algodón, hoodie deportivo, hoodie invierno, hoodie verano, comprar hoodie online, Nike, Adidas, Champion, streetwear, urban, vintage">
-
-    <meta name="description" content="<meta name=" description"
-        content="Descubre nuestra amplia selección de hoodies para hombre y mujer. Fabricados con materiales de alta calidad, nuestros hoodies son suaves, cómodos y perfectos para cualquier ocasión. ¡Encuentra tu estilo y compra ahora!">
-
+    <meta name="keywords" content="hoodie, sudadera, prenda de vestir, ropa casual, moda, hoodie para hombre, hoodie para mujer, hoodie oversize, hoodie con capucha, hoodie estampado, hoodie de algodón, hoodie deportivo, hoodie invierno, hoodie verano, comprar hoodie online, Nike, Adidas, Champion, streetwear, urban, vintage">
+    <meta name="description" content="Descubre nuestra amplia selección de hoodies para hombre y mujer. Fabricados con materiales de alta calidad, nuestros hoodies son suaves, cómodos y perfectos para cualquier ocasión. ¡Encuentra tu estilo y compra ahora!">
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Wave</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <img src="assets/logo.png" alt="">
@@ -32,7 +29,7 @@
             </div>
         </div>
     </header>
-    
+
     <main>
         <div class="reproductor">
             <div>
@@ -49,104 +46,102 @@
                 <p>4:56</p>
             </div>
             <div>
-             <button> <img src="assets/Vector.svg" alt=""></button>
-             <button> <img src="assets/boton pause.svg" alt=""></button>
-             <button> <img src="assets/Next.svg" alt=""></button>
+                <button> <img src="assets/Vector.svg" alt=""></button>
+                <button> <img src="assets/boton pause.svg" alt=""></button>
+                <button> <img src="assets/Next.svg" alt=""></button>
             </div>
         </div>
 
         <section>
-            <!----artista 1----->
+
             <div>
-                <img src="assets/foto lana.png" alt="">
-                <h2>Lana del Rey</h2>
-                <p>Artista</p>
-            </div>
-             <!----artista 2----->
-            <div>
-                <img src="assets/foto brent.png" alt="">
-                <h2>Brent Faiyaz</h2>
-                <p>Artista</p>
+                <!----artista 1----->
+                <div>
+                    <img src="assets/foto lana.png" alt="">
+                    <h2>Lana del Rey</h2>
+                    <p>Artista</p>
+                </div>
+                <!----artista 2----->
+                <div>
+                    <img src="assets/foto brent.png" alt="">
+                    <h2>Brent Faiyaz</h2>
+                    <p>Artista</p>
+                </div>
+
+                <!----artista 3----->
+                <div>
+                    <img src="assets/foto billie.png" alt="">
+                    <h2>Billie Eilish</h2>
+                    <p>Artista</p>
+                </div>
+
+                <!----artista 4----->
+                <div>
+                    <img src="assets/foto drake.png" alt="">
+                    <h2>Drake</h2>
+                    <p>Artista</p>
+                </div>
+
+                <!----artista 5---->
+                <div>
+                    <img src="assets/foto rihanna.png" alt="">
+                    <h2>Rihanna</h2>
+                    <p>Artista</p>
+                </div>
             </div>
 
-             <!----artista 3----->
-             <div>
-                <img src="assets/foto billie.png" alt="">
-                <h2>Billie Eilish</h2>
-                <p>Artista</p>
-            </div>
-
-             <!----artista 4----->
-             <div>
-                <img src="assets/foto drake.png" alt="">
-                <h2>Drake</h2>
-                <p>Artista</p>
-            </div>
-
-             <!----artista 5---->
-             <div>
-                <img src="assets/foto rihanna.png" alt="">
-                <h2>Rihanna</h2>
-                <p>Artista</p>
-            </div>
-
-             <!----album 1----->
-             <div>
+            <div id="track-list">
+                <!----album 1----->
                 <div>
                     <img src="assets/foto album rae.png" alt="">
+                    <div>
+                        <h3>SremmLife 2</h3>
+                        <p>Rae Sremmurd</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>SremmLife 2</h3>
-                    <p>Rae Sremmurd</p>
-                </div>
-            </div>
 
-             <!----album 2----->
-             <div>
+                <!----album 2----->
                 <div>
                     <img src="assets/foto album lost.png" alt="">
+                    <div>
+                        <h3>Lost</h3>
+                        <p>Brent Faiyaz</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>Lost</h3>
-                    <p>Brent Faiyaz</p>
-                </div>
-            </div>
 
-            <!----album 3----->
-            <div>
+                <!----album 3----->
                 <div>
                     <img src="assets/foto album billie.png" alt="">
+                    <div>
+                        <h3>Hit me hard and soft</h3>
+                        <p>Billie Eilish</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>Hit me hard and soft</h3>
-                    <p>Billie Eilish</p>
-                </div>
-            </div>
 
-            <!----album 4----->
-            <div>
+                <!----album 4----->
                 <div>
                     <img src="assets/foto album utopia.png" alt="">
+                    <div>
+                        <h3>Utopia</h3>
+                        <p>Travis Scott</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>Utopia</h3>
-                    <p>Travis Scott</p>
-                </div>
-            </div>
 
-             <!----album 5----->
-             <div>
+                <!----album 5----->
                 <div>
                     <img src="assets/foto album igor.png" alt="">
-                </div>
-                <div>
-                    <h3>Igor</h3>
-                    <p>Tyler the Creatort</p>
+                    <div>
+                        <h3>Igor</h3>
+                        <p>Tyler the Creatort</p>
+                    </div>
                 </div>
             </div>
 
         </section>
     </main>
-    
+
+    <script src="/main.js"></script>
+
 </body>
+
 </html>
