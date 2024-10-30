@@ -20,10 +20,23 @@ axios.get('https://api.institutoalfa.org/api/songs').then((res) => {
            document.getElementById("current-song-image").setAttribute("src", `https://api.institutoalfa.org/api/songs/image/${song.image.filename}`)
            document.getElementById("current-song-title").innerHTML = song.title
            document.getElementById("current-song-artista").innerHTML = song.author
+           document.getElementById("play").setAttribute("src", `assets/boton pause.svg`)
 
            document.getElementById("audio").setAttribute("src", `https://api.institutoalfa.org/api/songs/audio/${song.audio.filename}`)
         })
 
         contenedor.appendChild(div)
     })
+})
+
+let audio = document.getElementById("audio")
+
+document.getElementById("play").addEventListener("click", () => {
+    if (audio.paused){
+        audio.play()
+        document.getElementById("play").setAttribute("src", `assets/boton pause.svg`)
+    } else{
+        audio.pause()
+        document.getElementById("play").setAttribute("src", `assets/j.svg`)
+    }
 })
